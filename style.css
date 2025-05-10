@@ -1,13 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
-    font-family: PP mori;
-    src: url(./ppmori.ttf);
+    font-family: 'PP mori';
+    src: url('/ppmori.ttf');
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: PP mori;
+    font-family: 'PP mori', sans-serif;
     color: #fff;
 }
 
@@ -15,7 +19,8 @@ html, body {
     height: 100%;
     width: 100%;
 }
-#purple{
+
+#purple {
     height: 100vh;
     width: 100vw;
     top: 0;
@@ -25,9 +30,9 @@ html, body {
     opacity: 0;
     display: none;
     transition: opacity ease 1s;
-    
 }
-.cursor{
+
+.cursor {
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -36,15 +41,16 @@ html, body {
     z-index: 8;
     transition: background-image ease 0.5s;
     background-position: center;
-    background-size:cover ;
+    background-size: cover;
     mix-blend-mode: difference;
 }
-.main{
+
+.main {
     background-color: #0F0D0D;
     cursor: none;
 }
 
-.page1{
+.page1 {
     min-height: 100vh;
     width: 100%;
     position: relative;
@@ -52,69 +58,71 @@ html, body {
     padding-top: 12vw;
 }
 
-
-#nav{
+#nav {
     height: 55px;
     width: 100%;
-    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
     position: fixed;
     mix-blend-mode: difference;
-    z-index:102;
+    z-index: 102;
 }
-#nav img{
+
+#nav img {
     height: 27px;
 }
-#nav-part2{
+
+#nav-part2 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
-#nav #circle{
+#nav #circle {
     height: 18px;
     width: 18px;
     border-radius: 50%;
     background-color: #fff;
+    cursor: pointer;
 }
-#nav h4{
+
+#nav h4 {
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
 }
-#nav h4:nth-child(1){
+
+#nav h4:nth-child(1) {
     border-bottom: 1.5px solid #fff;
 }
 
-.page1 h1{
+.page1 h1 {
     font-size: 8vw;
     font-weight: 300;
-    font-family: PP mori;
-
+    font-family: 'PP mori', sans-serif;
     margin-left: 6vw;
     transform-origin: left;
 }
-.page1 h2{
+
+.page1 h2 {
     font-size: 8vw;
     font-weight: 300;
     transform-origin: left;
-
     margin-left: 26vw;
 }
 
-.page1 video{
+.page1 video {
     width: 60%;
     margin-top: 10vw;
     position: relative;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
 }
 
-.page2{
+.page2 {
     min-height: 80vh;
     width: 100%;
     padding: 100px 5vw;
@@ -123,40 +131,41 @@ html, body {
     z-index: 9;
 }
 
-.page2 h1{
-    font-size:7vw;
+.page2 h1 {
+    font-size: 7vw;
     font-weight: 500;
     color: #111;
-
 }
-.page2-container{
+
+.page2-container {
     height: 60vh;
     width: 100%;
-    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 0 5vw; */
 }
-.page2-left{
-    /* background-color: blue; */
+
+.page2-left {
     width: 40%;
 }
-.page2-right{
-    /* background-color: blue; */
+
+.page2-right {
     width: 24%;
 }
-.page2-left h2{
+
+.page2-left h2 {
     font-size: 4vw;
     font-weight: 300;
     color: #111;
     line-height: 4vw;
 }
-.page2-right p{
+
+.page2-right p {
     font-size: 28px;
     color: #111;
 }
-.page2-right button{
+
+.page2-right button {
     width: 100%;
     border-radius: 50px;
     border: none;
@@ -166,7 +175,7 @@ html, body {
     margin-top: 20px;
 }
 
-.page3{
+.page3 {
     min-height: 100vh;
     width: 100%;
     padding-top: 100px;
@@ -174,91 +183,99 @@ html, body {
     z-index: 9;
 }
 
-.page3 h1{
+.page3 h1 {
     font-size: 6.8vw;
     font-weight: 300;
     color: #111;
     margin-left: 100px;
 }
-.page3-part1{
+
+.page3-part1 {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-
 }
-.page3-part1 img{
+
+.page3-part1 img {
     height: 400px;
     margin-top: 160px;
 }
-.page3-part1 video{
+
+.page3-part1 video {
     height: 400px;
     margin-top: 40px;
 }
-.page4{
+
+.page4 {
     min-height: 100vh;
     width: 100%;
     z-index: 9;
     position: relative;
     padding: 170px 100px;
 }
-.elem{
-    /* background-color: salmon; */
+
+.elem {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
-.elem img{
+
+.elem img {
     position: absolute;
     opacity: 0;
     transition: all ease-out 0.5s;
     transform: translateY(10%) rotate(2deg);
 }
-.elem img:nth-child(1){
+
+.elem img:nth-child(1) {
     left: 2%;
 }
-.elem img:nth-child(3){
+
+.elem img:nth-child(3) {
     right: 5%;
 }
-.text-div{
+
+.text-div {
     height: 16vh;
     position: relative;
     z-index: 9;
     overflow: hidden;
 }
-.elem h1{
+
+.elem h1 {
     font-size: 7.5vw;
     font-weight: 600;
     transition: all ease-out 0.5s;
 }
 
-.elem:hover h1{
+.elem:hover h1 {
     transform: translateY(-100%);
     color: #EDBFFF;
 }
-.elem:hover img{
+
+.elem:hover img {
     opacity: 1;
     transform: translateY(0%) rotate(0deg);
-
 }
 
-
-.page5{
+.page5 {
     min-height: 100vh;
     width: 100%;
     position: relative;
     z-index: 9;
     padding: 140px 100px;
 }
-.page5 h2{
+
+.page5 h2 {
     font-size: 4vw;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 50px;
 }
-.box{
-    /* background-color: red; */
+
+.box {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -267,57 +284,92 @@ html, body {
     border-top: 2px solid #dadada;
 }
 
-.box:nth-last-child(1){
+.box:nth-last-child(1) {
     border-bottom: 2px solid #dadada;
-
 }
 
+.box h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
 
-footer{
+.box span {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+footer {
     height: 90vh;
     width: 100%;
     background-color: #EDBFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px;
 }
 
-/*  Mobile View */
+.footer-content {
+    width: 100%;
+}
 
-/* Mobile Responsive Styles */
+.footer-content h2 {
+    font-size: 5vw;
+    color: #111;
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 18px;
+    color: #111;
+    text-decoration: none;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-    /* General adjustments */
-    body {
-        overflow-x: hidden;
-    }
-    
     .cursor {
         display: none; /* Hide custom cursor on mobile */
     }
     
-    /* Navigation */
-    #nav {
-        padding: 0 20px;
-        height: 50px;
+    .main {
+        cursor: auto; /* Restore default cursor on mobile */
     }
     
-    #nav img {
-        height: 20px;
+    #nav {
+        padding: 0 20px;
     }
     
     #nav-part2 {
-        display: none; /* Hide nav items on mobile - consider hamburger menu */
+        gap: 15px;
     }
     
-    #nav-part3 #circle {
-        height: 15px;
-        width: 15px;
+    #nav h4 {
+        font-size: 14px;
     }
     
-    /* Page 1 */
     .page1 {
         padding-top: 20vw;
     }
     
     .page1 h1, .page1 h2 {
         font-size: 12vw;
+    }
+    
+    .page1 h1 {
         margin-left: 5vw;
     }
     
@@ -330,20 +382,18 @@ footer{
         margin-top: 15vw;
     }
     
-    /* Page 2 */
     .page2 {
-        padding: 50px 5vw;
-        min-height: auto;
+        padding: 60px 20px;
     }
     
     .page2 h1 {
         font-size: 10vw;
-        margin-bottom: 30px;
     }
     
     .page2-container {
         flex-direction: column;
         height: auto;
+        gap: 40px;
     }
     
     .page2-left, .page2-right {
@@ -351,29 +401,21 @@ footer{
     }
     
     .page2-left h2 {
-        font-size: 8vw;
-        line-height: 8vw;
-        margin-bottom: 30px;
+        font-size: 7vw;
+        line-height: 1.2;
     }
     
     .page2-right p {
         font-size: 18px;
-        margin-bottom: 20px;
     }
     
-    .page2-right button {
-        padding: 8px 0;
-        margin-bottom: 30px;
-    }
-    
-    /* Page 3 */
     .page3 {
-        padding-top: 50px;
+        padding-top: 60px;
     }
     
     .page3 h1 {
         font-size: 10vw;
-        margin-left: 5vw;
+        margin-left: 20px;
     }
     
     .page3-part1 {
@@ -384,29 +426,24 @@ footer{
     .page3-part1 img, .page3-part1 video {
         height: auto;
         width: 90%;
-        margin: 20px 0;
+        margin-top: 40px;
     }
     
-    /* Page 4 */
     .page4 {
-        padding: 50px 20px;
-    }
-    
-    .elem {
-        margin-bottom: 30px;
+        padding: 60px 20px;
     }
     
     .elem h1 {
-        font-size: 12vw;
+        font-size: 10vw;
     }
     
-    .text-div {
-        height: 10vh;
+    .elem img {
+        width: 120px;
+        height: auto;
     }
     
-    /* Page 5 */
     .page5 {
-        padding: 50px 20px;
+        padding: 60px 20px;
     }
     
     .page5 h2 {
@@ -415,59 +452,77 @@ footer{
     
     .box {
         height: 80px;
-        padding: 0 10px;
     }
     
-    .box h3, .box h4 {
-        font-size: 16px;
+    footer {
+        height: auto;
+        padding: 60px 20px;
+    }
+    
+    .footer-content h2 {
+        font-size: 8vw;
     }
 }
 
-/* For very small devices (e.g., iPhone SE) */
-@media (max-width: 375px) {
+/* Small mobile devices */
+@media (max-width: 480px) {
+    #nav {
+        height: 50px;
+    }
+    
+    #nav img {
+        height: 22px;
+    }
+    
+    #nav-part2 {
+        gap: 10px;
+    }
+    
+    #nav h4 {
+        font-size: 12px;
+    }
+    
+    #nav #circle {
+        height: 15px;
+        width: 15px;
+    }
+    
     .page1 h1, .page1 h2 {
         font-size: 14vw;
     }
     
     .page2-left h2 {
-        font-size: 10vw;
-        line-height: 10vw;
+        font-size: 8vw;
     }
     
     .page2-right p {
         font-size: 16px;
     }
     
-    .elem h1 {
-        font-size: 14vw;
+    .page5 h2 {
+        font-size: 9vw;
     }
     
-    .page5 h2 {
-        font-size: 10vw;
+    .box h3 {
+        font-size: 18px;
+    }
+    
+    .contact-info p {
+        font-size: 18px;
+    }
+    
+    .social-links a {
+        font-size: 16px;
     }
 }
 
-/* Tablet adjustments */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* For very small devices */
+@media (max-width: 320px) {
+    #nav-part2 h4:nth-child(3) {
+        display: none; /* Hide Contact on very small screens */
+    }
+    
     .page1 h1, .page1 h2 {
-        font-size: 10vw;
-    }
-    
-    .page2-container {
-        flex-direction: column;
-    }
-    
-    .page2-left, .page2-right {
-        width: 80%;
-    }
-    
-    .page3-part1 {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .page3-part1 img, .page3-part1 video {
-        width: 80%;
-        height: auto;
+        font-size: 16vw;
     }
 }
