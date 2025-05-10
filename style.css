@@ -278,3 +278,196 @@ footer{
     width: 100%;
     background-color: #EDBFFF;
 }
+
+/*  Mobile View */
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    /* General adjustments */
+    body {
+        overflow-x: hidden;
+    }
+    
+    .cursor {
+        display: none; /* Hide custom cursor on mobile */
+    }
+    
+    /* Navigation */
+    #nav {
+        padding: 0 20px;
+        height: 50px;
+    }
+    
+    #nav img {
+        height: 20px;
+    }
+    
+    #nav-part2 {
+        display: none; /* Hide nav items on mobile - consider hamburger menu */
+    }
+    
+    #nav-part3 #circle {
+        height: 15px;
+        width: 15px;
+    }
+    
+    /* Page 1 */
+    .page1 {
+        padding-top: 20vw;
+    }
+    
+    .page1 h1, .page1 h2 {
+        font-size: 12vw;
+        margin-left: 5vw;
+    }
+    
+    .page1 h2 {
+        margin-left: 15vw;
+    }
+    
+    .page1 video {
+        width: 90%;
+        margin-top: 15vw;
+    }
+    
+    /* Page 2 */
+    .page2 {
+        padding: 50px 5vw;
+        min-height: auto;
+    }
+    
+    .page2 h1 {
+        font-size: 10vw;
+        margin-bottom: 30px;
+    }
+    
+    .page2-container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .page2-left, .page2-right {
+        width: 100%;
+    }
+    
+    .page2-left h2 {
+        font-size: 8vw;
+        line-height: 8vw;
+        margin-bottom: 30px;
+    }
+    
+    .page2-right p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .page2-right button {
+        padding: 8px 0;
+        margin-bottom: 30px;
+    }
+    
+    /* Page 3 */
+    .page3 {
+        padding-top: 50px;
+    }
+    
+    .page3 h1 {
+        font-size: 10vw;
+        margin-left: 5vw;
+    }
+    
+    .page3-part1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .page3-part1 img, .page3-part1 video {
+        height: auto;
+        width: 90%;
+        margin: 20px 0;
+    }
+    
+    /* Page 4 */
+    .page4 {
+        padding: 50px 20px;
+    }
+    
+    .elem {
+        margin-bottom: 30px;
+    }
+    
+    .elem h1 {
+        font-size: 12vw;
+    }
+    
+    .text-div {
+        height: 10vh;
+    }
+    
+    /* Page 5 */
+    .page5 {
+        padding: 50px 20px;
+    }
+    
+    .page5 h2 {
+        font-size: 8vw;
+    }
+    
+    .box {
+        height: 80px;
+        padding: 0 10px;
+    }
+    
+    .box h3, .box h4 {
+        font-size: 16px;
+    }
+}
+
+/* For very small devices (e.g., iPhone SE) */
+@media (max-width: 375px) {
+    .page1 h1, .page1 h2 {
+        font-size: 14vw;
+    }
+    
+    .page2-left h2 {
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+    
+    .page2-right p {
+        font-size: 16px;
+    }
+    
+    .elem h1 {
+        font-size: 14vw;
+    }
+    
+    .page5 h2 {
+        font-size: 10vw;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .page1 h1, .page1 h2 {
+        font-size: 10vw;
+    }
+    
+    .page2-container {
+        flex-direction: column;
+    }
+    
+    .page2-left, .page2-right {
+        width: 80%;
+    }
+    
+    .page3-part1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .page3-part1 img, .page3-part1 video {
+        width: 80%;
+        height: auto;
+    }
+}
